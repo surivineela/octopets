@@ -18,35 +18,39 @@ Octopets is a platform designed to help pet owners find and share pet-friendly v
 - View details about each venue, including allowed pet types, amenities, and photos
 - Navigate between main pages: Home, Listings, Add Listing, Listing Details, and Reviews
 
-## Tech stack
+## 🏗️ Tech stack
 
 | Category | Technology |
 | --- | --- |
 | Frontend | React with TypeScript (functional components and hooks, 2025 latest) |
 | Routing | React Router v7 |
 | Backend | ASP.NET Core 9.0 with Minimal APIs |
-| Database | Entity Framework Core 9.0 (with in-memory database for development) |
+| Database | Entity Framework Core 9.0 (with local database for development) |
 | API Documentation | Swagger/OpenAPI with Scalar UI |
 | Application Hosting | .NET Aspire for distributed application orchestration |
 | Styling | Custom CSS with responsive design |
 | Containerization | Docker for frontend deployment |
 | Monitoring | Azure Application Insights (production only) |
 
-## Getting Started
+## 🚀 Getting started
 
-### Prerequisites
+### 💻 Prerequisites
 
-- **.NET SDK**: 9.0 or later
-- **Node.js**: v18.0.0 or later
-- **npm**: v10.0.0 or later
-- **Docker**: Latest version for running the frontend container
-- **Visual Studio** or **Visual Studio Code** (with C# Dev Kit extension)
+| Requirement | Version | Download Link |
+| --- | --- | --- |
+| .NET SDK | 9.0 or later | [Download .NET](https://dotnet.microsoft.com/download/dotnet/9.0) |
+| Node.js | v18.0.0 or later | [Download Node.js](https://nodejs.org/) |
+| npm | v10.0.0 or later | [npm Docs](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) (included with Node.js) |
+| Docker | Latest | [Download Docker](https://www.docker.com/products/docker-desktop/) |
+| Visual Studio | Latest | [Download Visual Studio](https://visualstudio.microsoft.com/downloads/) |
+| Visual Studio Code | Latest | [Download VS Code](https://code.visualstudio.com/) |
+| C# Dev Kit | Latest | [C# Dev Kit Extension](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csdevkit) |
 
-### Installation
+### 📦 Installation
 
 1. Clone the repository
    ```
-   git clone https://github.com/yourusername/octopets.git
+   git clone https://github.com/Azure-Samples/octopets.git
    cd octopets
    ```
 
@@ -70,35 +74,6 @@ Octopets is a platform designed to help pet owners find and share pet-friendly v
    - Distributed application monitoring
    - Health check statuses
    - Logs and telemetry
-
-## Project Structure
-
-```
-octopets/
-├── Octopets.sln              # Solution file
-├── apphost/                  # .NET Aspire AppHost
-│   ├── Program.cs            # Distributed application host configuration
-│   └── Octopets.AppHost.csproj
-├── backend/                  # ASP.NET Core backend API
-│   ├── Endpoints/            # Minimal API endpoints
-│   ├── Models/               # Data models
-│   ├── Data/                 # DbContext and data initialization
-│   ├── Repositories/         # Data access layer
-│   └── Program.cs            # Backend service configuration
-├── docs/                     # Documentation
-│   └── plans/                # Project planning documents
-├── frontend/                 # React application
-│   ├── public/               # Public assets
-│   └── src/                  # Source files
-│       ├── assets/           # Images and static assets
-│       ├── components/       # Reusable components
-│       ├── data/             # Mock data and constants
-│       ├── pages/            # Page components
-│       ├── types/            # TypeScript type definitions
-│       └── styles/           # CSS files
-└── servicedefaults/          # Shared service defaults for .NET services
-    └── Extensions.cs         # Common service extension methods
-```
 
 ## Features
 
