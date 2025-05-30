@@ -4,31 +4,33 @@ A simple web app for discovering and sharing pet-friendly homes, parks, cafés, 
 
 ![Octopets landing page](media/octopets-landing.gif)
 
-The project was demo-d at Microsoft Build 2025 during the [Reimagining Software Development and DevOps with Agentic AI](https://build.microsoft.com/en-US/sessions/BRK100?source=sessions) session. You can also catch up with the video, where you can see Octopets in action:
+## 📽️ See it in action
+
+The project was presented at Microsoft Build 2025 during the [Reimagining Software Development and DevOps with Agentic AI](https://build.microsoft.com/en-US/sessions/BRK100?source=sessions) session. You can also catch up with the video, where you can see Octopets in action:
 
 [![Reimagining Software Development and DevOps with Agentic AI | BRK100](media/video-image.jpg)](https://www.youtube.com/watch?v=eVPHMMrORbA)
 
-## About the project
+## 🙋‍♂️ About the project
 
 Octopets is a platform designed to help pet owners find and share pet-friendly venues. The application allows users to:
 
 - Browse and search for pet-friendly venues by pet type and venue type
 - View details about each venue, including allowed pet types, amenities, and photos
-- Add new venues/listings via a simple form
-- Leave and view reviews for venues
 - Navigate between main pages: Home, Listings, Add Listing, Listing Details, and Reviews
 
-## Technologies Used
+## Tech stack
 
-- **Frontend**: React with TypeScript (functional components and hooks, 2025 latest)
-- **Routing**: React Router v7
-- **Backend**: ASP.NET Core 9.0 with Minimal APIs
-- **Database**: Entity Framework Core 9.0 (with in-memory database for development)
-- **API Documentation**: Swagger/OpenAPI with Scalar UI
-- **Application Hosting**: .NET Aspire for distributed application orchestration
-- **Styling**: Custom CSS with responsive design
-- **Containerization**: Docker for frontend deployment
-- **Monitoring**: Azure Application Insights (production only)
+| Category | Technology |
+| --- | --- |
+| Frontend | React with TypeScript (functional components and hooks, 2025 latest) |
+| Routing | React Router v7 |
+| Backend | ASP.NET Core 9.0 with Minimal APIs |
+| Database | Entity Framework Core 9.0 (with in-memory database for development) |
+| API Documentation | Swagger/OpenAPI with Scalar UI |
+| Application Hosting | .NET Aspire for distributed application orchestration |
+| Styling | Custom CSS with responsive design |
+| Containerization | Docker for frontend deployment |
+| Monitoring | Azure Application Insights (production only) |
 
 ## Getting Started
 
