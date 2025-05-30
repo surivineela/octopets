@@ -1,10 +1,10 @@
-# Octopets
+# 🐕 Octopets
 
-A simple, global web app for discovering and sharing pet-friendly homes, parks, cafés, and custom venues for common pets.
+A simple web app for discovering and sharing pet-friendly homes, parks, cafés, and custom venues for your fur babies.
 
-*Last updated: May 11, 2025*
+![Octopets landing page](media/octopets-landing.gif)
 
-## About the Project
+## About the project
 
 Octopets is a platform designed to help pet owners find and share pet-friendly venues. The application allows users to:
 
