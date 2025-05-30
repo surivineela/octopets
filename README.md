@@ -4,9 +4,9 @@ A simple web app for discovering and sharing pet-friendly homes, parks, cafés, 
 
 ![Octopets landing page](media/octopets-landing.gif)
 
-The project was demo-d at Microsoft Build 2025 during the [Reimagining Software Development and DevOps with Agentic AI](https://build.microsoft.com/en-US/sessions/BRK100?source=sessions) session. You can also catch up with the video:
+The project was demo-d at Microsoft Build 2025 during the [Reimagining Software Development and DevOps with Agentic AI](https://build.microsoft.com/en-US/sessions/BRK100?source=sessions) session. You can also catch up with the video, where you can see Octopets in action:
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/eVPHMMrORbA?si=1PZI4-hiZ7FR345J" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+[![Reimagining Software Development and DevOps with Agentic AI | BRK100](media/video-image.jpg)](https://www.youtube.com/watch?v=eVPHMMrORbA)
 
 ## About the project
 
