@@ -46,6 +46,10 @@ Octopets is a platform designed to help pet owners find and share pet-friendly v
 | Visual Studio Code | Latest | [Download VS Code](https://code.visualstudio.com/) |
 | C# Dev Kit | Latest | [C# Dev Kit Extension](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csdevkit) |
 
+### 💬 Prompts
+
+You can find prompts that can be used to generate the project as well as automatically identity and run tests on it in the [`.github/prompts`](/.github/prompts/) folder.
+
 ### 📦 Installation
 
 1. Clone the repository
@@ -189,6 +193,24 @@ When deploying to production:
 4. **Monitoring**:
    - Application Insights is automatically configured in production mode
    - Dashboard access is available through the Azure portal
+
+#### ☁️ Deploying to Azure
+
+If you plan on deploying the project to Azure, you can do so with the help of the [Azure Developer CLI](https://learn.microsoft.com/en-us/azure/developer/azure-developer-cli/install-azd).
+
+Inside the `apphost` folder, run:
+
+```bash
+azd init
+```
+
+This will initialize the environment. Next, you can deploy to the cloud:
+
+```bash
+azd up
+```
+
+![azd up deploying resources to Azure](media/azdup.gif)
 
 ## 💼 License
 
