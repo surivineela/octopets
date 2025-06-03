@@ -29,7 +29,7 @@ You will help generate a Playwright test for the OctoPets application at https:/
    - Stop once the test passes successfully
 
 ## Notes
-- Test are located in tests/e2e.
+- Test are located in frontend/tests/e2e.
 - Use `playwright.config.ts` as the configuration for Playwright.
 - ALWAYS run tests with `npx playwright test --headed`. Do not pass individual test paths.
 - Do not examine frontend code or install Playwright
