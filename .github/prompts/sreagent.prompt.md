@@ -1,7 +1,7 @@
 The following Container App is experiencing 500 errors and is down:
 
-- my subscription: 52f408b9-4407-40ad-a65d-8deaf19cdf19
-- resource group name: rg-OCTOPETS
+- my subscription: 12345678-abcd-9e8f-7g6h-5i4j3k2l1m0n
+- resource group name: rg-octopets
 - container app name: octopetsapi
 
 Important:
