@@ -4,6 +4,8 @@ using Octopets.Backend.Data;
 using Octopets.Backend.Endpoints;
 using Octopets.Backend.Repositories;
 using Octopets.Backend.Repositories.Interfaces;
+using Octopets.Backend.Services;
+using Octopets.Backend.Services.Interfaces;
 using Scalar.AspNetCore;
 using System.Text.Json.Serialization;
 
@@ -26,6 +28,9 @@ builder.Services.ConfigureHttpJsonOptions(options =>
 // Register repositories
 builder.Services.AddScoped<IListingRepository, ListingRepository>();
 builder.Services.AddScoped<IReviewRepository, ReviewRepository>();
+
+// Register OpenAI service
+builder.Services.AddScoped<IOpenAIService, OpenAIService>();
 
 // Add native OpenAPI support
 builder.Services.AddEndpointsApiExplorer();
@@ -72,6 +77,7 @@ catch (Exception ex)
 // Map endpoints
 app.MapListingEndpoints();
 app.MapReviewEndpoints();
+app.MapPetAnalysisEndpoints();
 
 // Health check endpoint - make this available in all environments
 app.MapGet("/health", () => Results.Ok(new { Status = "Healthy", Timestamp = DateTime.UtcNow }))

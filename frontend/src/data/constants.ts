@@ -33,5 +33,6 @@ export const ROUTES: Record<string, string> = {
   LISTINGS: "/listings",
   LISTING_DETAILS: "/listing/:id",
   ADD_LISTING: "/add-listing",
-  REVIEWS: "/reviews/:id"
+  REVIEWS: "/reviews/:id",
+  PET_ANALYSIS: "/pet-analysis"
 };

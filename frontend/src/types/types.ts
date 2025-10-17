@@ -66,3 +66,35 @@ export type FormState = {
     website: string;
   };
 };
+
+// Pet Analysis Types for OpenAI Integration
+export type PetAnalysisRequest = {
+  petName: string;
+  petType: string;
+  breed: string;
+  age: number;
+  size: string; // Small, Medium, Large
+  temperamentDescription: string;
+  specialNeeds: string[];
+  activityLevel: string; // Low, Medium, High
+};
+
+export type PetAnalysisResponse = {
+  petName: string;
+  suitabilityScore: string;
+  recommendedVenueTypes: string[];
+  venueRequirements: string[];
+  behaviorPrediction: string;
+  safetyConsiderations: string[];
+  recommendedAmenities: string[];
+  generalAdvice: string;
+  analysisDate: string;
+};
+
+export type VenueRecommendationsResponse = {
+  recommendations: string[];
+};
+
+export type VenueDescriptionResponse = {
+  description: string;
+};
