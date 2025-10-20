@@ -4,6 +4,7 @@ export interface AppConfig {
 }
 
 export const appConfig: AppConfig = {
-    apiUrl: '/api', // Use relative path for nginx proxy
+    // Use environment variable for backend URL, fallback to relative path for nginx proxy
+    apiUrl: process.env.REACT_APP_API_BASE_URL || '/api',
     useMockData: process.env.REACT_APP_USE_MOCK_DATA === undefined ? true : process.env.REACT_APP_USE_MOCK_DATA.toLowerCase() === 'true'
 };

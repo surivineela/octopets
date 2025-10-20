@@ -12,7 +12,9 @@ using System.Text.Json.Serialization;
 // Configure services
 var builder = WebApplication.CreateBuilder(args);
 
-builder.AddServiceDefaults();
+// Add standard .NET services
+builder.Services.AddHealthChecks();
+builder.Services.AddApplicationInsightsTelemetry();
 
 // Add DbContext using an in-memory database
 builder.Services.AddDbContext<AppDbContext>(options =>
@@ -50,7 +52,8 @@ builder.Services.AddCors(options =>
 // Build the app
 var app = builder.Build();
 
-app.MapDefaultEndpoints();
+// Map health checks
+app.MapHealthChecks("/health");
 
 // Configure the HTTP request pipeline
 // Always enable OpenAPI in Azure (conditionally)
