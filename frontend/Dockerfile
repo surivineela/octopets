@@ -14,7 +14,7 @@ COPY . .
 
 RUN echo "Building with REACT_APP_USE_MOCK_DATA=${REACT_APP_USE_MOCK_DATA}"
 
-RUN npm run build
+RUN chmod +x node_modules/.bin/* && npm run build
 
 FROM nginx:alpine
 
